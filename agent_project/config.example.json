@@ -1,0 +1,49 @@
+{
+  "llm": {
+    "api_key": "",
+    "base_url": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "timeout": 120
+  },
+  "task": {
+    "stock_code": "600875",
+    "holding_cost": null,
+    "use_llm": true,
+    "refresh_data": true
+  },
+  "limits": {
+    "max_model_calls": 12,
+    "max_tool_calls": 36,
+    "agent_timeout_seconds": 600
+  },
+  "output": {
+    "directory": "./outputs",
+    "offline_html": true
+  },
+  "chart": {
+    "display_bars": 250,
+    "ma_periods": [
+      5,
+      10,
+      20,
+      60,
+      120
+    ],
+    "show_macd": true,
+    "show_volume": true,
+    "show_support_resistance": true
+  },
+  "data": {
+    "source_timeout": 55,
+    "request_timeout": 10,
+    "workers": 4,
+    "cache_ttl": 1800,
+    "guba_days": 7,
+    "guba_max_posts": 100,
+    "guba_max_pages": 20,
+    "cache_directory": "./.cache"
+  },
+  "logging": {
+    "directory": "./logs"
+  }
+}

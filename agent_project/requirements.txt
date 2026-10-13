@@ -1,0 +1,8 @@
+akshare>=1.19.1,<2
+pandas>=2.2,<4
+numpy>=1.26,<3
+openai>=1.50,<4
+plotly>=6,<7
+requests>=2.31,<3
+beautifulsoup4>=4.12,<5
+pypdf>=5,<7

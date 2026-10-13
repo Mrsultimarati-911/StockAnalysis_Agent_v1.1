@@ -1,0 +1,12 @@
+config.json
+API.txt
+.env
+.env.*
+.cache/
+outputs/
+logs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.idea/
