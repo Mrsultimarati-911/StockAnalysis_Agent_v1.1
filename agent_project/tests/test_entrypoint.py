@@ -35,7 +35,7 @@ class StandaloneConfigTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        self.directory = Path(self.temp.name)
+        self.directory = Path(self.temp.name).resolve()
         self.path = self.directory / "config.json"
 
     def write(self, data):
@@ -85,7 +85,7 @@ class RunnerTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        self.directory = Path(self.temp.name)
+        self.directory = Path(self.temp.name).resolve()
         self.path = self.directory / "config.json"
         self.data = document()
         self.write()
@@ -252,7 +252,7 @@ class ScriptTests(unittest.TestCase):
 
     def test_foreign_cwd_default_config_is_adjacent_to_script(self):
         with tempfile.TemporaryDirectory() as temp:
-            base = Path(temp)
+            base = Path(temp).resolve()
             project = base / "standalone"
             project.mkdir()
             shutil.copy2(PROJECT / "run_main.py", project / "run_main.py")

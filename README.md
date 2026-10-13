@@ -1,5 +1,7 @@
 # StockAnalysis Agent v1.1
 
+[![Offline tests](https://github.com/Mrsultimarati-911/StockAnalysis_Agent_v1.1/actions/workflows/tests.yml/badge.svg)](https://github.com/Mrsultimarati-911/StockAnalysis_Agent_v1.1/actions/workflows/tests.yml)
+
 一个在本地运行的 A 股个股研究工具。输入六位股票代码和可选持仓成本，程序采集公开资料、计算技术指标、检查证据缺口，并导出可复核的研究报告、离线图表和运行日志。
 
 项目提供自主研究 Agent 和固定规则分析两种模式。当前版本定位为需要人工复核的个人研究工具，研究结论的准确性、跨股票稳定性和核心分析测试覆盖仍需持续验证。
